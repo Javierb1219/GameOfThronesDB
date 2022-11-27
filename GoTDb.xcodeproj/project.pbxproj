@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B1EC962292B310F004D883A /* GoTDbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EC961292B310F004D883A /* GoTDbApp.swift */; };
+		3B1EC964292B310F004D883A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EC963292B310F004D883A /* ContentView.swift */; };
+		3B1EC966292B310F004D883A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1EC965292B310F004D883A /* Assets.xcassets */; };
+		3B1EC969292B310F004D883A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1EC968292B310F004D883A /* Preview Assets.xcassets */; };
+		3B1EC971292B31B0004D883A /* PostgresClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1EC970292B31B0004D883A /* PostgresClientKit */; };
+		3B1EC973292B31C8004D883A /* psqlConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EC972292B31C8004D883A /* psqlConnect.swift */; };
+		3BED864E292DAF0500B0AD0D /* battlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED864D292DAF0500B0AD0D /* battlesView.swift */; };
+		3BED8650292DB09F00B0AD0D /* charactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED864F292DB09F00B0AD0D /* charactersView.swift */; };
+		3BED8655292DB85A00B0AD0D /* gotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8654292DB85A00B0AD0D /* gotModel.swift */; };
+		3BED8658292DBED000B0AD0D /* detailedBattles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8657292DBED000B0AD0D /* detailedBattles.swift */; };
+		3BED865A292F0CFD00B0AD0D /* episodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8659292F0CFD00B0AD0D /* episodeView.swift */; };
+		3BED865C292F130E00B0AD0D /* characterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED865B292F130E00B0AD0D /* characterDetails.swift */; };
+		3BED865E292F227600B0AD0D /* seasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED865D292F227600B0AD0D /* seasonsView.swift */; };
+		3BED86602932E6C200B0AD0D /* episodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED865F2932E6C200B0AD0D /* episodeDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B1EC95E292B310F004D883A /* GoTDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1EC961292B310F004D883A /* GoTDbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTDbApp.swift; sourceTree = "<group>"; };
+		3B1EC963292B310F004D883A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B1EC965292B310F004D883A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B1EC968292B310F004D883A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B1EC972292B31C8004D883A /* psqlConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psqlConnect.swift; sourceTree = "<group>"; };
+		3BED864D292DAF0500B0AD0D /* battlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battlesView.swift; sourceTree = "<group>"; };
+		3BED864F292DB09F00B0AD0D /* charactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charactersView.swift; sourceTree = "<group>"; };
+		3BED8654292DB85A00B0AD0D /* gotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gotModel.swift; sourceTree = "<group>"; };
+		3BED8657292DBED000B0AD0D /* detailedBattles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailedBattles.swift; sourceTree = "<group>"; };
+		3BED8659292F0CFD00B0AD0D /* episodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = episodeView.swift; sourceTree = "<group>"; };
+		3BED865B292F130E00B0AD0D /* characterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterDetails.swift; sourceTree = "<group>"; };
+		3BED865D292F227600B0AD0D /* seasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seasonsView.swift; sourceTree = "<group>"; };
+		3BED865F2932E6C200B0AD0D /* episodeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = episodeDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B1EC95B292B310F004D883A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1EC971292B31B0004D883A /* PostgresClientKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B1EC955292B310F004D883A = {
+			isa = PBXGroup;
+			children = (
+				3B1EC960292B310F004D883A /* GoTDb */,
+				3B1EC95F292B310F004D883A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B1EC95F292B310F004D883A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B1EC95E292B310F004D883A /* GoTDb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B1EC960292B310F004D883A /* GoTDb */ = {
+			isa = PBXGroup;
+			children = (
+				3B1EC961292B310F004D883A /* GoTDbApp.swift */,
+				3BED8653292DB84300B0AD0D /* viewModels */,
+				3BED8652292DB82F00B0AD0D /* Models */,
+				3BED8651292DB82000B0AD0D /* Views */,
+				3B1EC967292B310F004D883A /* Preview Content */,
+			);
+			path = GoTDb;
+			sourceTree = "<group>";
+		};
+		3B1EC967292B310F004D883A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B1EC968292B310F004D883A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BED8651292DB82000B0AD0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B1EC963292B310F004D883A /* ContentView.swift */,
+				3BED864D292DAF0500B0AD0D /* battlesView.swift */,
+				3BED864F292DB09F00B0AD0D /* charactersView.swift */,
+				3BED865D292F227600B0AD0D /* seasonsView.swift */,
+				3BED8659292F0CFD00B0AD0D /* episodeView.swift */,
+				3BED8656292DBEB400B0AD0D /* DetailedView */,
+				3B1EC965292B310F004D883A /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BED8652292DB82F00B0AD0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BED8654292DB85A00B0AD0D /* gotModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BED8653292DB84300B0AD0D /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B1EC972292B31C8004D883A /* psqlConnect.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		3BED8656292DBEB400B0AD0D /* DetailedView */ = {
+			isa = PBXGroup;
+			children = (
+				3BED8657292DBED000B0AD0D /* detailedBattles.swift */,
+				3BED865B292F130E00B0AD0D /* characterDetails.swift */,
+				3BED865F2932E6C200B0AD0D /* episodeDetails.swift */,
+			);
+			path = DetailedView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B1EC95D292B310F004D883A /* GoTDb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1EC96C292B310F004D883A /* Build configuration list for PBXNativeTarget "GoTDb" */;
+			buildPhases = (
+				3B1EC95A292B310F004D883A /* Sources */,
+				3B1EC95B292B310F004D883A /* Frameworks */,
+				3B1EC95C292B310F004D883A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoTDb;
+			packageProductDependencies = (
+				3B1EC970292B31B0004D883A /* PostgresClientKit */,
+			);
+			productName = GoTDb;
+			productReference = 3B1EC95E292B310F004D883A /* GoTDb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B1EC956292B310F004D883A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3B1EC95D292B310F004D883A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B1EC959292B310F004D883A /* Build configuration list for PBXProject "GoTDb" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B1EC955292B310F004D883A;
+			packageReferences = (
+				3B1EC96F292B31B0004D883A /* XCRemoteSwiftPackageReference "PostgresClientKit" */,
+			);
+			productRefGroup = 3B1EC95F292B310F004D883A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B1EC95D292B310F004D883A /* GoTDb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B1EC95C292B310F004D883A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1EC969292B310F004D883A /* Preview Assets.xcassets in Resources */,
+				3B1EC966292B310F004D883A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B1EC95A292B310F004D883A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BED865A292F0CFD00B0AD0D /* episodeView.swift in Sources */,
+				3BED8655292DB85A00B0AD0D /* gotModel.swift in Sources */,
+				3B1EC964292B310F004D883A /* ContentView.swift in Sources */,
+				3BED865C292F130E00B0AD0D /* characterDetails.swift in Sources */,
+				3BED8650292DB09F00B0AD0D /* charactersView.swift in Sources */,
+				3B1EC973292B31C8004D883A /* psqlConnect.swift in Sources */,
+				3BED864E292DAF0500B0AD0D /* battlesView.swift in Sources */,
+				3B1EC962292B310F004D883A /* GoTDbApp.swift in Sources */,
+				3BED86602932E6C200B0AD0D /* episodeDetails.swift in Sources */,
+				3BED8658292DBED000B0AD0D /* detailedBattles.swift in Sources */,
+				3BED865E292F227600B0AD0D /* seasonsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B1EC96A292B310F004D883A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B1EC96B292B310F004D883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B1EC96D292B310F004D883A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoTDb/Preview Content\"";
+				DEVELOPMENT_TEAM = Q3MU63B4W7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Javier-Bonilla.GoTDb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B1EC96E292B310F004D883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoTDb/Preview Content\"";
+				DEVELOPMENT_TEAM = Q3MU63B4W7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Javier-Bonilla.GoTDb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B1EC959292B310F004D883A /* Build configuration list for PBXProject "GoTDb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1EC96A292B310F004D883A /* Debug */,
+				3B1EC96B292B310F004D883A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B1EC96C292B310F004D883A /* Build configuration list for PBXNativeTarget "GoTDb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1EC96D292B310F004D883A /* Debug */,
+				3B1EC96E292B310F004D883A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B1EC96F292B31B0004D883A /* XCRemoteSwiftPackageReference "PostgresClientKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/codewinsdotcom/PostgresClientKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B1EC970292B31B0004D883A /* PostgresClientKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1EC96F292B31B0004D883A /* XCRemoteSwiftPackageReference "PostgresClientKit" */;
+			productName = PostgresClientKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3B1EC956292B310F004D883A /* Project object */;
+}
