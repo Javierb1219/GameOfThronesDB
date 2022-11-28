@@ -1,0 +1,75 @@
+<!-- Following block of code was created with putting ! then tab -->
+<!-- If time permits, go to fontawesome.com to make an account and be able to add icons-->
+<!-- # = id -->
+<!-- undraw.co/illustrations used for images -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT Website</title>
+    <!-- References the the style.css class in the folder -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVIGATION BAR SECTION-->
+    <!-- Creates nav; what the fuck is a nav?-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!-- Creates logo; has the name "Game of Thrones DB"-->
+            <a href="" id="navbar__logo">Game Of Thrones DB</a>
+            <!-- Creates a class and id-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+              <!--Inside the UL and gonna create the first menu bar item-->  
+              <li class="navbar__item">
+                <!--Now have an a-tag with name "HOME"--> 
+                <a href="/home.html" class="navbar__links">Home</a>
+              </li>
+              <li class="navbar__item">
+                <!--Now have an a-tag with name "Characters"--> 
+                <a href="/characters.html" class="navbar__links">Characters</a>
+              </li>
+              <li class="navbar__item">
+                <!--Now have an a-tag with name "Battles"--> 
+                <a href="/battles.html" class="navbar__links">Battles</a>
+              </li>
+              <li class="navbar__item">
+                <!--Now have an a-tag with name "Seasons"--> 
+                <a href="/sesons.html" class="navbar__links">Seasons</a>
+              </li>
+              <li class="navbar__item">
+                <!--Now have an a-tag with name "Episodes"--> 
+                <a href="/episodes.html" class="navbar__links">Episodes</a>
+              </li>
+              <li class="navbar__btn">
+                <!--Now have a button with name "Sign up"--> 
+                <a href="/" class="button">Sign up</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- References the app.js to carry out the drop down menu animation-->
+    <!-- SECTION 2 -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Welcome to our GoT Database!</h1>
+                <h2>Inspired by the award-winning show.</h2>
+                <p>You are on the Game Of Thrones DB Home page.</p>
+                <button class="main__btn"><a href="/">yo yo yo</a></button>
+            </div>
+            <div class="main__img--container">
+                <!-- used cat.svg for the image in ~/project/image -->
+                <img src="images/got1.jpg" alt="cat" id="main__img">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
